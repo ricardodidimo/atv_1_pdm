@@ -13,7 +13,6 @@ const LoginForm = () => {
         const findUser = users.filter(u => u.username === username && u.password === password)
 
         if (findUser.length > 0) {
-
             router.push("/list")
             console.log('logou')
             return;
@@ -24,7 +23,7 @@ const LoginForm = () => {
     return (
         <View style={styles.container}>
             <TextInput style={styles.input} onChangeText={setUsername} key='username' placeholder='username'></TextInput>
-            <TextInput style={styles.input} onChangeText={setPassword} key='password' placeholder='password'></TextInput>
+            <TextInput style={styles.input} secureTextEntry={true} onChangeText={setPassword} key='password' placeholder='password'></TextInput>
             <View style={styles.buttonRow} onTouchStart={loginFunc}>
                 <Image style={styles.image} source={require('../../assets/images/solar_login-bold.png')} />
                 <Text>LOGIN</Text>

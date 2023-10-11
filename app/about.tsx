@@ -15,7 +15,7 @@ const About = () => {
       <Text>66 CARROS</Text>
       <Text>Versão 1.0</Text>
       <Text>Desenvolvido por RICARDO DIDIMO</Text>
-      <Text>Github: </Text>
+      <Text>Github: https://github.com/ricardodidimo/atv_1_pdm </Text>
     </View>
   )
 }
